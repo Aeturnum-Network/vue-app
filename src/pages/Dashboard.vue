@@ -17,38 +17,6 @@
         <user-card :user="user5"></user-card>
       </div>
     </div>
-    
-    <!-- <div class="row">
-      <div class="col-lg-6 col-md-12">
-        <card type="tasks" :header-classes="{'text-right': isRTL}">
-          <template slot="header">
-            <h6 class="title d-inline">{{$t('dashboard.tasks', {count: 5})}}</h6>
-            <p class="card-category d-inline">{{$t('dashboard.today')}}</p>
-            <base-dropdown menu-on-right=""
-                           tag="div"
-                           title-classes="btn btn-link btn-icon"
-                           aria-label="Settings menu"
-                           :class="{'float-left': isRTL}">
-              <i slot="title" class="tim-icons icon-settings-gear-63"></i>
-              <a class="dropdown-item" href="#pablo">{{$t('dashboard.dropdown.action')}}</a>
-              <a class="dropdown-item" href="#pablo">{{$t('dashboard.dropdown.anotherAction')}}</a>
-              <a class="dropdown-item" href="#pablo">{{$t('dashboard.dropdown.somethingElse')}}</a>
-            </base-dropdown>
-          </template>
-          <div class="table-full-width table-responsive">
-            <task-list></task-list>
-          </div>
-        </card>
-      </div>
-      <div class="col-lg-6 col-md-12">
-        <card class="card" :header-classes="{'text-right': isRTL}">
-          <h4 slot="header" class="card-title">{{$t('dashboard.simpleTable')}}</h4>
-          <div class="table-responsive">
-            <user-table></user-table>
-          </div>
-        </card>
-      </div>
-    </div> -->
   </div>
 </template>
 <script>
@@ -71,26 +39,31 @@
     data() {
       return {
         user1: {
+          id:1,
           fullName: 'www.facebook.com',
           image: 'img/facebook.png',
           title: 'Nikhil Jain',
         },
         user2: {
+          id:2,
           fullName: 'Metamask',
           image: 'img/metamask.svg',
           title: '0xa6b38D2094ce7ccF9306Fd7e7f7458',
         },
         user3: {
+          id:3,
           fullName: 'www.binance.com',
           image: 'img/binance.png',
           title: 'nikhil.jain@gmail.com',
         },
         user4: {
+          id:4,
           fullName: 'www.icloud.com',
           image: 'img/icloud.png',
           title: 'nikhil@icloud.com',
         },
         user5: {
+          id:5,
           fullName: 'accounts.google.com',
           image: 'img/google.png',
           title: 'nikhil@gmail.com',

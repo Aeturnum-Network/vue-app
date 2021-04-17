@@ -13,7 +13,7 @@
             <span class="navbar-toggler-bar bar3"></span>
           </button>
         </div>
-        <a class="navbar-brand" href="#pablo">{{routeName}}</a>
+        <a class="navbar-brand" href="#pablo"></a>
       </div>
       <button class="navbar-toggler" type="button"
               @click="toggleMenu"
@@ -32,19 +32,19 @@
             <div class="search-bar input-group" @click="searchModalVisible = true">
               <!-- <input type="text" class="form-control" placeholder="Search...">
               <div class="input-group-addon"><i class="tim-icons icon-zoom-split"></i></div> -->
-              <button class="btn btn-link" id="search-button" data-toggle="modal" data-target="#searchModal">
+              <!-- <button class="btn btn-link" id="search-button" data-toggle="modal" data-target="#searchModal">
                 <i class="tim-icons icon-zoom-split"></i>
-              </button>
+              </button> -->
               <!-- You can choose types of search input -->
             </div>
-            <modal :show.sync="searchModalVisible"
+            <!-- <modal :show.sync="searchModalVisible"
                    class="modal-search"
                    id="searchModal"
                    :centered="false"
                    :show-close="true">
               <input slot="header" v-model="searchQuery" type="text" class="form-control" id="inlineFormInputGroup" placeholder="SEARCH">
-            </modal>
-            <base-dropdown tag="li"
+            </modal> -->
+            <!-- <base-dropdown tag="li"
                            :menu-on-right="!$rtl.isRTL"
                            title-tag="a" class="nav-item">
               <a slot="title" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="true">
@@ -55,21 +55,12 @@
                 </p>
               </a>
               <li class="nav-link">
-                <a href="#" class="nav-item dropdown-item">Mike John responded to your email</a>
+                <a href="#" class="nav-item dropdown-item">Facebook account added!</a>
               </li>
               <li class="nav-link">
-                <a href="#" class="nav-item dropdown-item">You have 5 more tasks</a>
+                <a href="#" class="nav-item dropdown-item">Binance Authorization Pending...</a>
               </li>
-              <li class="nav-link">
-                <a href="#" class="nav-item dropdown-item">Your friend Michael is in town</a>
-              </li>
-              <li class="nav-link">
-                <a href="#" class="nav-item dropdown-item">Another notification</a>
-              </li>
-              <li class="nav-link">
-                <a href="#" class="nav-item dropdown-item">Another one</a>
-              </li>
-            </base-dropdown>
+            </base-dropdown> -->
             <base-dropdown tag="li"
                            :menu-on-right="!$rtl.isRTL"
                            title-tag="a"
@@ -85,11 +76,11 @@
                 </p>
               </a>
               <li class="nav-link">
-                <a href="#" class="nav-item dropdown-item">Profile</a>
+                <a href="#" class="nav-item dropdown-item">NIKHIL JAIN</a>
               </li>
-              <li class="nav-link">
+              <!-- <li class="nav-link">
                 <a href="#" class="nav-item dropdown-item">Settings</a>
-              </li>
+              </li> -->
               <div class="dropdown-divider"></div>
               <li class="nav-link">
                 <a href="#" class="nav-item dropdown-item">Log out</a>

@@ -4,7 +4,7 @@
     </p>
     <div class="author">
       <a href="#">
-        <img class="avatar" :src=user.image alt="...">
+        <img class="avatar" :src="user.image" alt="...">
         <h5 class="title">{{user.fullName}}</h5>
       </a>
       <p class="description">
@@ -12,7 +12,10 @@
       </p>
     </div>
     <p></p>
-    <base-button slot="footer" type="button" fill>Edit</base-button>
+    <div style="text-align:center">
+      <base-button slot="footer" type="button" @click="$router.push('edit/'+user.id)" fill>Edit</base-button>
+
+    </div>
   </card>
 </template>
 <script>
