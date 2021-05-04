@@ -17,6 +17,9 @@ import RouterPrefetch from 'vue-router-prefetch'
 import App from "./App";
 // TIP: change to import router from "./router/starterRouter"; to start with a clean layout
 import router from "./router/index";
+import vSelect from "vue-select";
+import axios from 'axios'
+import VueAxios from 'vue-axios'
 // import router from "./router/starterRouter";
 
 import BlackDashboard from "./plugins/blackDashboard";
@@ -25,6 +28,9 @@ import './registerServiceWorker'
 Vue.use(BlackDashboard);
 Vue.use(VueRouter);
 Vue.use(RouterPrefetch);
+Vue.use(VueAxios, axios)
+Vue.component("v-select", vSelect);
+Vue.axios.defaults.baseURL = "http://localhost:8888";
 
 /* eslint-disable no-new */
 new Vue({

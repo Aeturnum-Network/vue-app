@@ -76,14 +76,14 @@
                 </p>
               </a>
               <li class="nav-link">
-                <a href="#" class="nav-item dropdown-item">NIKHIL JAIN</a>
+                <a href="#" class="nav-item dropdown-item">{{ username }}</a>
               </li>
               <!-- <li class="nav-link">
                 <a href="#" class="nav-item dropdown-item">Settings</a>
               </li> -->
               <div class="dropdown-divider"></div>
               <li class="nav-link">
-                <a href="#" class="nav-item dropdown-item">Log out</a>
+                <a href="#" @click='logout'  class="nav-item dropdown-item">Log out</a>
               </li>
             </base-dropdown>
           </ul>
@@ -112,6 +112,7 @@
     },
     data() {
       return {
+        username: localStorage.getItem('username'),
         activeNotifications: false,
         showMenu: false,
         searchModalVisible: false,
@@ -119,6 +120,11 @@
       };
     },
     methods: {
+      logout() {
+        localStorage.removeItem('Authorization')
+        localStorage.removeItem('Username')
+        this.$router.push('/login')
+      },
       capitalizeFirstLetter(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
       },
